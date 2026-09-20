@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         TextView textView2 = findViewById(R.id.textView2);
 
 
+        button.setOnClickListener(v -> {
+            textView2.setText("Kliknięto przycisk!");
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
